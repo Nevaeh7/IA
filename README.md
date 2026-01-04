@@ -1,10 +1,10 @@
-# IntentAnony - Intent-Based Anonymization System
+# IntentAnony - You Only Anonymize What Is Not Intent-Relevant: Suppressing Non-Intent Privacy Evidence
 
-An intent-based anonymization system built on large language models (LLMs) that protects user privacy while maintaining text utility. The system supports multiple anonymization strategies, privacy evaluation, and utility assessment.
+A pragmatic intent conditioned anonymization framework built on large language models (LLMs) that safeguards user privacy while preserving textual utility. The framework supports multiple anonymization strategies and integrates privacy evaluation and utility assessment.
 
 ## Features
 
-- **Intent-Based Anonymization**: Intelligent anonymization processing based on intent recognition
+- **Pragmatic Intent Conditioned Anonymization**: Conditions anonymization on inferred pragmatic intent to suppress non-intent privacy evidence.
 - **Privacy Protection**: Supports multiple anonymization strategies (LLM, Azure, Span, etc.)
 - **Privacy Evaluation**: Assesses privacy protection effectiveness after anonymization
 - **Utility Evaluation**: Evaluates text utility after anonymization (BLEU, ROUGE, LLM Judge)
@@ -42,7 +42,7 @@ An intent-based anonymization system built on large language models (LLMs) that 
 
 ## System Requirements
 
-- Python >= 3.8
+- Python >= 3.10
 - MongoDB (optional, for data storage)
 - Sufficient API quotas (OpenAI, DeepSeek, Google, etc.)
 
@@ -220,3 +220,4 @@ stats = asyncio.run(batch_evaluate_utility(
 1. **API Keys**: Ensure all required API keys are properly configured in `llm_tools/keys.json`
 2. **MongoDB**: If using MongoDB, ensure the service is running
 3. **Data Format**: Ensure input data conforms to the expected format (JSONL)
+
