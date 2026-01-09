@@ -1,17 +1,25 @@
-# IntentAnony - You Only Anonymize What Is Not Intent-Relevant: Suppressing Non-Intent Privacy Evidence
+# IntentAnony  
+**You Only Anonymize What Is Not Intent-Relevant: Suppressing Non-Intent Privacy Evidence**
 
-A pragmatic intent conditioned anonymization framework built on large language models (LLMs) that safeguards user privacy while preserving textual utility. The framework supports multiple anonymization strategies and integrates privacy evaluation and utility assessment.
 
-## Features
+## 🔍 Overview
 
-- **Pragmatic Intent Conditioned Anonymization**: Conditions anonymization on inferred pragmatic intent to suppress non-intent privacy evidence.
-- **Privacy Protection**: Supports multiple anonymization strategies (LLM, Azure, Span, etc.)
-- **Privacy Evaluation**: Assesses privacy protection effectiveness after anonymization
-- **Utility Evaluation**: Evaluates text utility after anonymization (BLEU, ROUGE, LLM Judge)
-- **Intent Recognition**: Automatically identifies privacy intents in user text
-- **Attack Assessment**: Evaluates privacy leakage risks from adversarial attacks
-- **Async Processing**: Efficient asynchronous batch processing capabilities
-- **Multi-Model Support**: Supports multiple LLM providers (OpenAI, DeepSeek, Google, GLM, etc.)
+**IntentAnony** is a pragmatic *intent-conditioned text anonymization framework* built on large language models (LLMs).  
+It protects user privacy under **inference-based threat models** while preserving **communicative intent and textual utility**.
+
+Unlike surface-level masking or generic rewriting, IntentAnony **selectively suppresses non-intent privacy evidence**, ensuring that only information irrelevant to the user’s communicative intent is anonymized.
+
+---
+
+## ✨ Key Features
+
+- 🎯 **Intent-aware anonymization** rather than blanket masking  
+- 🛡️ Defense against **attribute inference and profiling attacks**  
+- 📊 Integrated **privacy–utility evaluation** (automatic + human)  
+- 🔄 Supports multiple anonymization strategies and threat settings  
+
+---
+
 
 ## Project StructureIntentAnony_Updated/
 
@@ -220,4 +228,5 @@ stats = asyncio.run(batch_evaluate_utility(
 1. **API Keys**: Ensure all required API keys are properly configured in `llm_tools/keys.json`
 2. **MongoDB**: If using MongoDB, ensure the service is running
 3. **Data Format**: Ensure input data conforms to the expected format (JSONL)
+
 
