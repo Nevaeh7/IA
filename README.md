@@ -2,7 +2,7 @@
 **You Only Anonymize What Is Not Intent-Relevant: Suppressing Non-Intent Privacy Evidence**
 
 
-## 🔍 Overview
+## Overview
 
 **IntentAnony** is a pragmatic *intent-conditioned text anonymization framework* built on large language models (LLMs).  
 It protects user privacy under **inference-based threat models** while preserving **communicative intent and textual utility**.
@@ -11,12 +11,12 @@ Unlike surface-level masking or generic rewriting, IntentAnony **selectively sup
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🎯 **Intent-aware anonymization** rather than blanket masking  
-- 🛡️ Defense against **attribute inference and profiling attacks**  
-- 📊 Integrated **privacy–utility evaluation** (automatic + human)  
-- 🔄 Supports multiple anonymization strategies and threat settings  
+- **Intent-aware anonymization** rather than blanket masking  
+- Defense against **attribute inference and profiling attacks**  
+- Integrated **privacy–utility evaluation** (automatic + human)  
+- Supports multiple anonymization strategies and threat settings  
 
 ---
 
@@ -228,5 +228,6 @@ stats = asyncio.run(batch_evaluate_utility(
 1. **API Keys**: Ensure all required API keys are properly configured in `llm_tools/keys.json`
 2. **MongoDB**: If using MongoDB, ensure the service is running
 3. **Data Format**: Ensure input data conforms to the expected format (JSONL)
+
 
 
